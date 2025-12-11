@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>meteo to day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+  <!-- wrapper pour le titre + bouton -->
+  <div class="d1">
+    <h1>meteo en temp reel</h1>
+    <button class="checkbox" id="checkbox" onclick="changerbakround()">light</button>
+  </div>
+
+  <div id="d2" class="d2">
+    <input type="text" value="" placeholder="entrer ville" id="recherch" class="recherch">
+    <button id="GO" class="GO"  onclick="search()">GO</button>
+    <div class="d3">
+      
+    <h1 id="C" class="C"></h1>
+    <img src="" class="sun" id="sun">
+    
+      
+    <h2 id="S" class="S"></h2>
+    
+    <img src=""  id="temper" class="temper">
+    <h2 id="T" class="T"></h2>
+    
+    <div class="wind-row">
+    <img src="" alt=""  id="wind" class="wind">
+    <h2 id="V" class="V"></h2>
+    </div>
+    
+    </div>
+  </div>
+
+  <script src="script.js"></script>   
+</body>
+
+</html>
