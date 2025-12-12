@@ -11,6 +11,7 @@ function search() {
   if (!city) return alert("Entrez une ville.");
 
   fetchByCity(city);  
+  input.value=""
 }
 
 const API_KEY = "0962d6568950d8abd49bf2891e647fac";
@@ -32,7 +33,7 @@ function fetchByCity(cityName) {
 
       let T = document.getElementById('T');
       T.innerHTML = Math.round(data.list[0].main.temp) + "°C";
-      
+      console.log(data.list[0].main.temp)
       let V = document.getElementById('V');
       V.innerHTML = (data.list[0].wind.speed * 3.6).toFixed(1) + " km/h";
        
